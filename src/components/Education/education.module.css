@@ -1,0 +1,702 @@
+@font-face {
+  font-family: spindel;
+  src: url("/public/learning_curve_bold_ot_tt.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main css */
+.maincontainer {
+  width: 100%;
+  height: 55rem;
+  background-color: rgb(40, 40, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.invisivbletext {
+  color: rgb(40, 40, 43);
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: spindel;
+  font-style: italic;
+}
+.maincontainer:hover .invisivbletext {
+  color: #918585;
+  transition: all 1s linear;
+}
+.heading {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.heading > div {
+  width: 95%;
+  height: inherit;
+}
+.heading > div {
+  color: #953553;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0 #953553, 1px 1px 0 #953553, 2px 2px 0 #953553,
+    7px 7px 6px rgba(0, 0, 0, 0.1), 7px 7px 1px rgba(0, 0, 0, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.maincontainer > div {
+  width: 80%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.heading {
+  width: 100%;
+  height: 5rem;
+}
+.educationgraph {
+  width: 100%;
+  height: 40rem;
+}
+/* sectionone css start */
+.sectionone {
+  width: 100%;
+  height: 18.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  align-items: flex-end;
+}
+/* clsss one css start */
+.classone {
+  width: 25%;
+  height: 15rem;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+}
+.details {
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details > div {
+  width: 80%;
+  height: 12rem;
+}
+.details > div p {
+  color: rgb(40, 40, 43);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.block {
+  width: 15%;
+  border: 2px solid none;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  height: 14rem;
+  transition: all 1s ease-in;
+  transition-delay: 0.9s;
+  background-color: #953553;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoone {
+  transition: all 2s ease-in;
+  transition-delay: 1.2s;
+}
+
+/* classone css over */
+/* classtwo css start */
+.classtwo {
+  width: 25%;
+  height: 15rem;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+}
+.detailstwo {
+  width: 85%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailstwo > div {
+  width: 90%;
+  height: 12rem;
+}
+.detailstwo > div p {
+  color: rgb(40, 40, 43);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.blocktwo {
+  width: 15%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  transition: all 1s ease-in;
+  transition-delay: 1.4s;
+  background-color: #953553;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infotwo {
+  transition: all 2s ease-in;
+  transition-delay: 1.8s;
+}
+/* classtwo css end */
+/* class three css start */
+
+.classthree {
+  width: 25%;
+  height: 15rem;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+}
+.detailsthree {
+  width: 85%;
+  height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailsthree > div {
+  width: 100%;
+  height: 12rem;
+}
+.detailsthree > div p {
+  color: rgb(40, 40, 43);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+}
+.blockthree {
+  width: 15%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  transition: all 1s ease-in;
+  transition-delay: 1.8s;
+  background-color: #953553;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infothree {
+  transition: all 2s ease-in;
+  transition-delay: 2s;
+}
+/* classthree css end */
+/* sectionone css end */
+/* sectiontwo css start */
+.sectiontwo {
+  height: 2.5rem;
+  border-radius: 2rem;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  transition: all 2s ease-in;
+  background-color: #953553;
+}
+/* sectiontwo css end */
+/* sectionthree css start */
+.sectionthree {
+  width: 100%;
+  height: 18.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.sectionthree > div {
+  width: 25%;
+  height: 15rem;
+  display: flex;
+  overflow: hidden;
+}
+.barboxone {
+  width: 15%;
+  transition: all 1s ease-in;
+  transition-delay: 0.5s;
+  background-color: #953553;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentbox {
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentbox > div {
+  width: 90%;
+  height: 12rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentbox > div p {
+  color: rgb(40, 40, 43);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+}
+.barboxtwo {
+  transition: all 1s ease-in;
+  transition-delay: 0.8s;
+  background-color: #953553;
+  width: 15%;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.barboxthree {
+  width: 15%;
+  transition: all 1s ease-in;
+  transition-delay: 1.2s;
+  background-color: #953553;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.infofour {
+  transition: all 2s ease-in;
+  transition-delay: 0.8s;
+}
+.infofive {
+  transition: all 2s ease-in;
+  transition-delay: 1.5s;
+}
+.infosix {
+  transition: all 2s ease-in;
+  transition-delay: 2s;
+}
+/* section three css end */
+/* section dislplay none for responsiv */
+.respsecone {
+  display: none;
+}
+.respsectwo {
+  display: none;
+}
+.respsecthree {
+  display: none;
+}
+/* eduacation text common color */
+.info {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.commoncolor {
+  color: #953553;
+}
+.projectdetails {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.projectdetails > button {
+  width: 15%;
+  height: 2rem;
+  background: none;
+  outline: none;
+  border: none;
+  color: #953553;
+  font-size: 1rem;
+  font-family: monospace;
+}
+.projectdetails > button:hover {
+  color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px),
+  (min-width: 600px) and (max-width: 1194px) {
+  .projectdetails {
+    width: 100%;
+  }
+  .projectdetails > button {
+    width: 50%;
+  }
+  /* responsive main css */
+  .maincontainer {
+    width: 100%;
+    height: 65rem;
+  }
+  .invisivbletext {
+    color: #918585;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: spindel;
+    font-style: italic;
+  }
+
+  .maincontainer > div {
+    width: 95%;
+    height: inherit;
+    display: flex;
+  }
+
+  .heading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .heading > div {
+    width: 95%;
+    height: auto;
+  }
+  .heading > div > h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .educationgraph {
+    width: 100%;
+    height: 47rem;
+    display: flex;
+    margin-top: 1rem;
+  }
+  /* all section display block */
+  .sectionone {
+    display: none;
+  }
+  .sectiontwo {
+    display: none;
+  }
+  .sectionthree {
+    display: none;
+  }
+  /* end */
+  /* respsecone css start */
+  .respsecone {
+    display: block;
+    width: 45%;
+    height: inherit;
+  }
+  /* respclassoone css start */
+  .respclassone {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-end;
+    margin-top: 2rem;
+  }
+  .respblock {
+    height: 2rem;
+    overflow: hidden;
+    border: 2px solid none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: all 1s ease-in;
+    transition-delay: 0.2s;
+    background-color: #953553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respdetails {
+    overflow: hidden;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respdetails > div {
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .respblocktwo {
+    height: 2rem;
+    overflow: hidden;
+    border: 2px solid none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: all 1s ease-in;
+    transition-delay: 0.8s;
+    background-color: #953553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respdetailstwo {
+    overflow: hidden;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respdetailstwo > div {
+    width: 95%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .respblockthree {
+    height: 2rem;
+    overflow: hidden;
+    border: 2px solid none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: all 1s ease-in;
+    transition-delay: 1.2s;
+    background-color: #953553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respdetailsthree {
+    overflow: hidden;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respdetailsthree > div {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* respsecone css end */
+  /* respsectewo css start */
+  .respsectwo {
+    display: block;
+    width: 10%;
+    height: inherit;
+    border-radius: 2rem;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    transition: all 2s ease-in;
+    background-color: #953553;
+  }
+  /* respsectewo css end */
+  .texts {
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .respdetailstwo {
+    overflow: hidden;
+    width: 100%;
+    height: 13rem;
+  }
+
+  .respdetailsthree {
+    overflow: hidden;
+    width: 100%;
+    height: 13rem;
+  }
+  /* respsecthree css start */
+  .respsecthree {
+    display: block;
+    width: 45%;
+    height: inherit;
+  }
+  .respclassoneagain {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  .respblockagain {
+    height: 2rem;
+    overflow: hidden;
+    border: 2px solid none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 1s ease-in;
+    transition-delay: 0.9s;
+    background-color: #953553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respblocktwoagain {
+    height: 2rem;
+    overflow: hidden;
+    border: 2px solid none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 1s ease-in;
+    transition-delay: 1.4s;
+    background-color: #953553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .respblockthreeagain {
+    height: 2rem;
+    overflow: hidden;
+    border: 2px solid none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 1s ease-in;
+    transition-delay: 1.8s;
+    background-color: #953553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* respsecthree css end */
+  /* text common color */
+  .respinfo {
+    text-align: center;
+    color: rgb(209, 0, 0);
+    font-size: 1rem;
+    transition: all 2s ease-in;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .respinfoone {
+    transition-delay: 0.4s;
+  }
+  .respinfotwo {
+    transition-delay: 1.5s;
+  }
+  .respinfothree {
+    transition-delay: 1.9s;
+  }
+  .respinfofour {
+    transition-delay: 0.9s;
+  }
+  .respinfofive {
+    transition-delay: 1.4s;
+  }
+  .respinfosix {
+    transition-delay: 2s;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .projectdetails {
+    width: 100%;
+  }
+  .projectdetails > button {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1194px) {
+  .invisivbletext {
+    color: #918585;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: spindel;
+    font-style: italic;
+  }
+  .maincontainer > div {
+    width: 95%;
+    height: inherit;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .respsectwo {
+    width: 7%;
+  }
+  .educationgraph {
+    width: 70%;
+    height: 47rem;
+    display: flex;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .heading > div > h1 {
+    font-size: 2.5rem;
+  }
+  .respinfo {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1194px) and (max-width: 1280px) {
+  .maincontainer > div {
+    width: 90%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

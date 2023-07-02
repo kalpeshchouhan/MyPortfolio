@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.maincontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(40, 40, 43);
+}
+.maincontainer > div {
+  width: 80%;
+  height: inherit;
+}
+.heading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.heading > p {
+  color: #953553;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0 #953553, 1px 1px 0 #953553, 2px 2px 0 #953553,
+    7px 7px 6px rgba(0, 0, 0, 0.1), 7px 7px 1px rgba(0, 0, 0, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.subheading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.head {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.date {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.head > p {
+  color: #953553;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0 #953553, 1px 1px 0 #953553, 2px 2px 0 #953553,
+    7px 7px 6px rgba(0, 0, 0, 0.1), 7px 7px 1px rgba(0, 0, 0, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.date > p {
+  color: white;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.details {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+.details > p {
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+.textdoc {
+  color: #953553;
+  font-size: 1.5em;
+}
+.headingtwo {
+  width: 100%;
+  height: auto;
+}
+
+.headingtwo > p {
+  color: #953553;
+  font-size: 1.8em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .maincontainer > div {
+    width: 90%;
+  }
+  .subheading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading > p {
+    font-size: 2.2rem;
+  }
+  .head {
+    width: 100%;
+  }
+  .date {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .head > p {
+    font-size: 1.5rem;
+  }
+  .date > p {
+    font-size: 0.7rem;
+  }
+  .details > p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .subheading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .head {
+    width: 100%;
+  }
+  .head > p {
+    font-size: 1.7rem;
+  }
+  .date {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .subheading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .head {
+    width: 100%;
+  }
+  .head > p {
+    font-size: 1.9rem;
+  }
+  .date {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .date > p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

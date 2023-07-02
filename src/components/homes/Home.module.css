@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(40, 40, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer > div {
+  width: 80%;
+  height: 35rem;
+  display: flex;
+}
+.firstdiv {
+  width: 50%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer:hover .codediv > p {
+  color: #918585;
+  transition: all 1s linear;
+}
+.maincontainer:hover .lastcodediv > p {
+  color: #918585;
+  transition: all 1s linear;
+}
+
+.codediv {
+  width: 100%;
+  height: auto;
+}
+.codediv > p {
+  color: rgb(40, 40, 43);
+  font-size: 1.2rem;
+  font-family: spindel;
+  font-style: italic;
+}
+.lastcodediv {
+  width: 100%;
+  height: auto;
+}
+.lastcodediv > p {
+  color: rgb(40, 40, 43);
+  font-size: 1.2rem;
+  font-family: spindel;
+  font-style: italic;
+}
+.hdiv {
+  width: 100%;
+  height: auto;
+}
+.firstdiv > div span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1px 0 #953553, 1px 1px 0 #953553, 2px 2px 0 #953553,
+    7px 7px 6px rgba(0, 0, 0, 0.1), 7px 7px 1px rgba(0, 0, 0, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.firstdiv > div span:hover {
+  color: #953553;
+  animation: animate 1s;
+}
+@keyframes animate {
+  25% {
+    color: #ff0051;
+    transform: scale(0.8, 1.3);
+  }
+  50% {
+    color: #cb1750;
+    transform: scale(1.1, 0.8);
+  }
+  75% {
+    color: #a2244c;
+    transform: scale(0.7, 1.2);
+  }
+}
+.seconddiv {
+  width: 50%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seconddiv > div {
+  width: 100%;
+  height: auto;
+}
+
+.btntwo {
+  display: flex;
+  justify-content: flex-end;
+}
+.seconddiv > div button {
+  width: 40%;
+  height: 3rem;
+  background: none;
+  border: 2px solid #953553;
+  color: #953553;
+  font-size: 1.2rem;
+  font-family: monospace;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.seconddiv > div button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #953553;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+.seconddiv > div button:hover:before {
+  transform: translateX(0);
+  z-index: -1;
+}
+.seconddiv > div button:hover {
+  color: black;
+}
+.responsivebtn {
+  display: none;
+}
+@media only screen and (max-width: 360px) {
+  .codediv > p {
+    color: #918585;
+  }
+  .lastcodediv > p {
+    color: #918585;
+  }
+  .maincontainer {
+    height: auto;
+  }
+  .maincontainer > div {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstdiv {
+    width: 100%;
+    height: auto;
+  }
+  .seconddiv {
+    display: none;
+  }
+  .firstdiv > div span {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .responsivebtn {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .responsivebtn > button {
+    width: 45%;
+    height: 3rem;
+    background: none;
+    border: 2px solid #953553;
+    color: #953553;
+    font-size: 0.8rem;
+    font-family: monospace;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .responsivebtn > button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #953553;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+  }
+  .responsivebtn > button:hover:before {
+    transform: translateX(0);
+    z-index: -1;
+  }
+  .responsivebtn > button:hover {
+    color: black;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (min-width: 360px) {
+  .codediv > p {
+    color: #918585;
+  }
+  .lastcodediv > p {
+    color: #918585;
+  }
+  .maincontainer {
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .maincontainer > div {
+    width: 95%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstdiv {
+    width: 100%;
+    height: auto;
+  }
+  .seconddiv {
+    display: none;
+  }
+  .firstdiv > div span {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .responsivebtn {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .responsivebtn > button {
+    width: 43%;
+    height: 3rem;
+    background: none;
+    border: 2px solid #953553;
+    color: #953553;
+    font-size: 0.9rem;
+    font-family: monospace;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .responsivebtn > button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #953553;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+  }
+  .responsivebtn > button:hover:before {
+    transform: translateX(0);
+    z-index: -1;
+  }
+  .responsivebtn > button:hover {
+    color: black;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .codediv > p {
+    color: #918585;
+  }
+  .lastcodediv > p {
+    color: #918585;
+  }
+  .maincontainer {
+    height: 100vh;
+  }
+  .maincontainer > div {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstdiv {
+    width: 100%;
+    height: auto;
+  }
+  .seconddiv {
+    display: none;
+  }
+  .firstdiv > div span {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .responsivebtn {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .responsivebtn > button {
+    width: 35%;
+    height: 3rem;
+    background: none;
+    border: 2px solid #953553;
+    color: #953553;
+    font-size: 1.2rem;
+    font-family: monospace;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .responsivebtn > button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #953553;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+  }
+  .responsivebtn > button:hover:before {
+    transform: translateX(0);
+    z-index: -1;
+  }
+  .responsivebtn > button:hover {
+    color: black;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .codediv > p {
+    color: #918585;
+  }
+  .lastcodediv > p {
+    color: #918585;
+  }
+  .maincontainer > div {
+    width: 90%;
+  }
+
+  .firstdiv > div span {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1280px) and (min-width: 1200px) {
+  .maincontainer > div {
+    width: 95%;
+  }
+
+  .firstdiv > div span {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}

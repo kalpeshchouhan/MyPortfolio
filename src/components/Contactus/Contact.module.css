@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  width: 100%;
+  height: 50rem;
+  background-color: rgb(40, 40, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.maincontainer > div {
+  width: 80%;
+  height: 45rem;
+  display: flex;
+}
+.divmap {
+  width: 60%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.divmap > img {
+  width: 100%;
+  height: 45rem;
+  opacity: 0.5;
+}
+.divmap > img:hover {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.divcontact {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.divtwo {
+  width: 100%;
+  height: auto;
+}
+.divtwo > form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  width: 70%;
+  height: 4rem;
+  border: none;
+  background-color: #1b1b1b;
+  outline: none;
+  border-radius: 0.8rem;
+  color: #ffff;
+  font-family: monospace;
+  padding-left: 1rem;
+}
+.divtwo > form textarea {
+  width: 70%;
+  height: 10rem;
+  border: none;
+  background-color: #1b1b1b;
+  outline: none;
+  border-radius: 0.8rem;
+  color: #ffff;
+  font-family: monospace;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.headingdiv {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.headingdiv > div {
+  width: 90%;
+  height: inherit;
+}
+.headingdiv > div > h1 {
+  color: #953553;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0 #953553, 1px 1px 0 #953553, 2px 2px 0 #953553,
+    7px 7px 6px rgba(0, 0, 0, 0.1), 7px 7px 1px rgba(0, 0, 0, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.paradiv {
+  display: flex;
+  justify-content: center;
+}
+.paradiv > div {
+  width: 90%;
+  height: inherit;
+}
+.paradiv > div p {
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.divone {
+  width: 100%;
+  height: auto;
+}
+.divone > p {
+  color: rgb(40, 40, 43);
+  font-size: 1.2rem;
+  font-family: spindel;
+  font-style: italic;
+}
+.maincontainer > div:hover .divone > p {
+  color: #918585;
+  transition: all 1s linear;
+}
+.divbtn {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+}
+.divbtn > button {
+  width: 40%;
+  height: 3rem;
+  background: none;
+  border: 2px solid #953553;
+  color: #953553;
+  font-size: 1.2rem;
+  font-family: monospace;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.divbtn > button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #953553;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+.divbtn > button:hover:before {
+  transform: translateX(0);
+  z-index: -1;
+}
+.divbtn > button:hover {
+  color: black;
+}
+.divmapres {
+  display: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .divone > p {
+    color: #918585;
+  }
+  .headingdiv > div > h1 {
+    font-size: 3rem;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .divone > p {
+    color: #918585;
+  }
+  .maincontainer {
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .maincontainer > div {
+    width: 95%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .divmap {
+    display: none;
+  }
+  .divcontact {
+    width: 100%;
+  }
+  .input {
+    width: 85%;
+  }
+  .divtwo > form textarea {
+    width: 85%;
+  }
+  .divmapres {
+    display: block;
+    width: 100%;
+    height: inherit;
+    display: flex;
+  }
+
+  .divmapres > img {
+    width: 100%;
+    height: 40rem;
+    opacity: 0.5;
+    margin-top: 1rem;
+  }
+  .divmapres > img:hover {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1194px) {
+  .divone > p {
+    color: #918585;
+  }
+  .maincontainer {
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .maincontainer > div {
+    width: 95%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .divmap {
+    display: none;
+  }
+  .divcontact {
+    width: 100%;
+  }
+  .input {
+    width: 55%;
+  }
+  .divtwo > form textarea {
+    width: 55%;
+  }
+  .divmapres {
+    display: block;
+    width: 100%;
+    height: inherit;
+    display: flex;
+  }
+
+  .divmapres > img {
+    width: 100%;
+    height: 40rem;
+    opacity: 0.5;
+    margin-top: 1rem;
+  }
+  .divmapres > img:hover {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+  }
+  .paradiv > div p {
+    font-size: 1.5rem;
+  }
+  .headingdiv > div > h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1194px) and (max-width: 1280px) {
+  .maincontainer > div {
+    width: 90%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

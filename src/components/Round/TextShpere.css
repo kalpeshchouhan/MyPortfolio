@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap");
+
+.text-shpere {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagcloud {
+  font-family: monospace;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1.5em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+  color: #c32e5d;
+}
+
+.tagcloud--item:hover {
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  .text-shpere {
+    flex-direction: column;
+  }
+
+  .tagcloud {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+}
